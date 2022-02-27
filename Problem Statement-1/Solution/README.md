@@ -1,25 +1,26 @@
-# Solution for Problem Statement-1
+#include<iostream>
+using namespace std;
 
-***
+int main(){
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        int n,a,b,k;
+        cin>>n>>a>>b>>k;
+        for(int i=1;i<=n;i++)
+        {
+            if(i%a==0 and i%b==0)
+            continue;
+            else if(i%a==0)
+            k--;
+            else if(i%b==0)
+            k--;
+        }
+        if(k<=0)
+        cout<<"Win\n";
+        else
+        cout<<"Lose\n";
+    }
+}
 
-1. Fork this repository.
-2. Add the folder with your name in it.
-
-***
-
-Follow this format for Naming:
- 
-# Example
-
-Format: **Name_SolutionName_Ps-1**
-  
-Sample: **H2S_gameofcodes_Ps-1**
-
-***  
-4. Raise a Pull Request.
-5. Wait for Experts to accept it
-6. Thank You for your participation 
-
-***
-
-## All The Best Everyone ;)
